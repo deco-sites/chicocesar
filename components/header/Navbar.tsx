@@ -35,14 +35,14 @@ function Navbar({ leftItems, rightItems }: {
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden md:flex flex-row justify-between items-center border-b-1 border-default w-full pl-2 pr-3">
+      <div class="hidden md:flex flex-row justify-between items-center border-b-1 border-default w-full">
         <div class="flex-auto flex justify-left">
           {leftItems.map((item) => <NavItem item={item} />)}
         </div>
         <div class="flex-auto flex justify-right">
           {rightItems.map((item) => <NavItem item={item} />)}
         </div>
-        <div class="flex-none w-44 flex items-center justify-end gap-2">
+        <div class="flex-none w-44 flex items-center justify-end">
           <HeaderButton variant="facebook" />
           <HeaderButton variant="instagram" />
           <HeaderButton variant="twitter" />
