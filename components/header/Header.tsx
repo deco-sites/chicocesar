@@ -48,7 +48,7 @@ function Header(
 ) {
   return (
     <header class={`h-[${headerHeight}]`}>
-      <div class="bg-default fixed w-full z-50">
+      <div class="bg-black fixed w-full z-50">
         <Navbar leftItems={leftNavItems} rightItems={rightNavItems} />
       </div>
 
