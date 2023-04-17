@@ -95,9 +95,9 @@ function HeaderButton(
 export default HeaderButton;
 
 function onHover() {
-throw new Error("Function not implemented.");
+  throw new Error("Function not implemented.");
 }
 
 function onHoverLeave() {
-throw new Error("Function not implemented.");
+  throw new Error("Function not implemented.");
 }
