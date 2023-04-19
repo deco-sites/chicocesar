@@ -46,10 +46,38 @@ function Navbar({ leftItems, rightItems }: {
           PORTUGUÊS
         </div>
         <div class="flex-none w-22 flex items-center justify-end">
-          <a href="https://www.facebook.com/OficialChicoCesar" target="_blank" rel="noopener noreferrer" class="gap-2"><Icon id="Facebook" width={20} height={20} strokeWidth={0.1} /></a>
-          <a href="https://www.instagram.com/oficialchicocesar/" target="_blank" rel="noopener noreferrer" class="gap-2"><Icon id="Instagram" width={20} height={20} strokeWidth={0.1} /></a>
-          <a href="https://twitter.com/ChicoCesarOf" target="_blank" rel="noopener noreferrer" class="gap-2"><Icon id="Twitter" width={20} height={20} strokeWidth={0.1} /></a>
-          <a href="https://www.youtube.com/c/ChicoCesarOficial" target="_blank" rel="noopener noreferrer" class="gap-2"><Icon id="Youtube" width={20} height={20} strokeWidth={0.1} /></a>
+          <a
+            href="https://www.facebook.com/OficialChicoCesar"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="gap-2"
+          >
+            <Icon id="Facebook" width={20} height={20} strokeWidth={0.1} />
+          </a>
+          <a
+            href="https://www.instagram.com/oficialchicocesar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="gap-2"
+          >
+            <Icon id="Instagram" width={20} height={20} strokeWidth={0.1} />
+          </a>
+          <a
+            href="https://twitter.com/ChicoCesarOf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="gap-2"
+          >
+            <Icon id="Twitter" width={20} height={20} strokeWidth={0.1} />
+          </a>
+          <a
+            href="https://www.youtube.com/c/ChicoCesarOficial"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="gap-2"
+          >
+            <Icon id="Youtube" width={20} height={20} strokeWidth={0.1} />
+          </a>
         </div>
       </div>
     </>
