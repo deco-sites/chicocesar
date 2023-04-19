@@ -21,12 +21,12 @@ import * as $$$$$10 from "./islands/AddToCartButton.tsx";
 import * as $$$$$$$$0 from "./sections/ProductShelf.tsx";
 import * as $$$$$$$$1 from "./sections/LinkTree.tsx";
 import * as $$$$$$$$2 from "./sections/Features.tsx";
-import * as $$$$$$$$3 from "./sections/DesignSystem.story.tsx";
-import * as $$$$$$$$4 from "./sections/WishlistGallery.tsx";
-import * as $$$$$$$$5 from "./sections/CookieConsent.tsx";
-import * as $$$$$$$$6 from "./sections/ProductDetails.tsx";
-import * as $$$$$$$$7 from "./sections/Footer.tsx";
-import * as $$$$$$$$8 from "./sections/Carousel.tsx";
+import * as $$$$$$$$3 from "./sections/Banner.tsx";
+import * as $$$$$$$$4 from "./sections/DesignSystem.story.tsx";
+import * as $$$$$$$$5 from "./sections/WishlistGallery.tsx";
+import * as $$$$$$$$6 from "./sections/CookieConsent.tsx";
+import * as $$$$$$$$7 from "./sections/ProductDetails.tsx";
+import * as $$$$$$$$8 from "./sections/Footer.tsx";
 import * as $$$$$$$$9 from "./sections/SearchResult.tsx";
 import * as $$$$$$$$10 from "./sections/Header.tsx";
 import * as $$$$$$$$11 from "./sections/Highlights.tsx";
@@ -117,12 +117,12 @@ const manifest: DecoManifest = {
     "deco-sites/chicocesar/sections/ProductShelf.tsx": $$$$$$$$0,
     "deco-sites/chicocesar/sections/LinkTree.tsx": $$$$$$$$1,
     "deco-sites/chicocesar/sections/Features.tsx": $$$$$$$$2,
-    "deco-sites/chicocesar/sections/DesignSystem.story.tsx": $$$$$$$$3,
-    "deco-sites/chicocesar/sections/WishlistGallery.tsx": $$$$$$$$4,
-    "deco-sites/chicocesar/sections/CookieConsent.tsx": $$$$$$$$5,
-    "deco-sites/chicocesar/sections/ProductDetails.tsx": $$$$$$$$6,
-    "deco-sites/chicocesar/sections/Footer.tsx": $$$$$$$$7,
-    "deco-sites/chicocesar/sections/Carousel.tsx": $$$$$$$$8,
+    "deco-sites/chicocesar/sections/Banner.tsx": $$$$$$$$3,
+    "deco-sites/chicocesar/sections/DesignSystem.story.tsx": $$$$$$$$4,
+    "deco-sites/chicocesar/sections/WishlistGallery.tsx": $$$$$$$$5,
+    "deco-sites/chicocesar/sections/CookieConsent.tsx": $$$$$$$$6,
+    "deco-sites/chicocesar/sections/ProductDetails.tsx": $$$$$$$$7,
+    "deco-sites/chicocesar/sections/Footer.tsx": $$$$$$$$8,
     "deco-sites/chicocesar/sections/SearchResult.tsx": $$$$$$$$9,
     "deco-sites/chicocesar/sections/Header.tsx": $$$$$$$$10,
     "deco-sites/chicocesar/sections/Highlights.tsx": $$$$$$$$11,
