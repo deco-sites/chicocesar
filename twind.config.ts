@@ -40,12 +40,12 @@ const options: Omit<Options, "selfURL"> = {
   theme: {
     extend: {
       colors: {
-        "default": "#FFFFFF",
-        "header": "#FFFFFF",
-        "badge": "#8C3D3D", // shopping cart tem isso tambem
-        "footer": "#003232",
-        "interactive": "#161616",
-        "interactive-inverse": "#FFFFFF",
+        "default": "#000000",
+        "header": "#000000",
+        "badge": "#000000", // shopping cart tem isso tambem
+        "footer": "#000000",
+        "interactive": "#000000",
+        "interactive-inverse": "#000000",
         "hover": "rgba(0, 0, 0, 0.04)",
         "hover-inverse": "rgba(255, 255, 255, 0.4)",
       },

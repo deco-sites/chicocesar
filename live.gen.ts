@@ -18,21 +18,13 @@ import * as $$$$$7 from "./islands/WishlistButton.tsx";
 import * as $$$$$8 from "./islands/HeaderButton.tsx";
 import * as $$$$$9 from "./islands/ShippingSimulation.tsx";
 import * as $$$$$10 from "./islands/AddToCartButton.tsx";
-import * as $$$$$$$$0 from "./sections/ProductShelf.tsx";
-import * as $$$$$$$$1 from "./sections/LinkTree.tsx";
-import * as $$$$$$$$2 from "./sections/Features.tsx";
-import * as $$$$$$$$3 from "./sections/Banner.tsx";
-import * as $$$$$$$$4 from "./sections/DesignSystem.story.tsx";
-import * as $$$$$$$$5 from "./sections/WishlistGallery.tsx";
-import * as $$$$$$$$6 from "./sections/CookieConsent.tsx";
-import * as $$$$$$$$7 from "./sections/ProductDetails.tsx";
-import * as $$$$$$$$8 from "./sections/Footer.tsx";
-import * as $$$$$$$$9 from "./sections/SearchResult.tsx";
-import * as $$$$$$$$10 from "./sections/Header.tsx";
-import * as $$$$$$$$11 from "./sections/Highlights.tsx";
-import * as $$$$$$$$12 from "./sections/BannerPLP.tsx";
-import * as $$$$$$$$13 from "./sections/WhatsApp.tsx";
-import * as $$$$$$$$14 from "./sections/BannerGrid.tsx";
+import * as $$$$$$$$0 from "./sections/Banner.tsx";
+import * as $$$$$$$$1 from "./sections/DesignSystem.story.tsx";
+import * as $$$$$$$$2 from "./sections/Footer.tsx";
+import * as $$$$$$$$3 from "./sections/MiddleSection.tsx";
+import * as $$$$$$$$4 from "./sections/Header.tsx";
+import * as $$$$$$$$5 from "./sections/BannerPLP.tsx";
+import * as $$$$$$$$6 from "./sections/BannerGrid.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -114,21 +106,13 @@ const manifest: DecoManifest = {
     "./islands/AddToCartButton.tsx": $$$$$10,
   },
   "sections": {
-    "deco-sites/chicocesar/sections/ProductShelf.tsx": $$$$$$$$0,
-    "deco-sites/chicocesar/sections/LinkTree.tsx": $$$$$$$$1,
-    "deco-sites/chicocesar/sections/Features.tsx": $$$$$$$$2,
-    "deco-sites/chicocesar/sections/Banner.tsx": $$$$$$$$3,
-    "deco-sites/chicocesar/sections/DesignSystem.story.tsx": $$$$$$$$4,
-    "deco-sites/chicocesar/sections/WishlistGallery.tsx": $$$$$$$$5,
-    "deco-sites/chicocesar/sections/CookieConsent.tsx": $$$$$$$$6,
-    "deco-sites/chicocesar/sections/ProductDetails.tsx": $$$$$$$$7,
-    "deco-sites/chicocesar/sections/Footer.tsx": $$$$$$$$8,
-    "deco-sites/chicocesar/sections/SearchResult.tsx": $$$$$$$$9,
-    "deco-sites/chicocesar/sections/Header.tsx": $$$$$$$$10,
-    "deco-sites/chicocesar/sections/Highlights.tsx": $$$$$$$$11,
-    "deco-sites/chicocesar/sections/BannerPLP.tsx": $$$$$$$$12,
-    "deco-sites/chicocesar/sections/WhatsApp.tsx": $$$$$$$$13,
-    "deco-sites/chicocesar/sections/BannerGrid.tsx": $$$$$$$$14,
+    "deco-sites/chicocesar/sections/Banner.tsx": $$$$$$$$0,
+    "deco-sites/chicocesar/sections/DesignSystem.story.tsx": $$$$$$$$1,
+    "deco-sites/chicocesar/sections/Footer.tsx": $$$$$$$$2,
+    "deco-sites/chicocesar/sections/MiddleSection.tsx": $$$$$$$$3,
+    "deco-sites/chicocesar/sections/Header.tsx": $$$$$$$$4,
+    "deco-sites/chicocesar/sections/BannerPLP.tsx": $$$$$$$$5,
+    "deco-sites/chicocesar/sections/BannerGrid.tsx": $$$$$$$$6,
     "$live/sections/PageInclude.tsx": i2$$$9,
     "deco-sites/std/sections/configYourViews.global.tsx": i2$$$0,
     "deco-sites/std/sections/SEO.tsx": i2$$$1,
