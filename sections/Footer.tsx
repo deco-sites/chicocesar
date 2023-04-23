@@ -1,6 +1,6 @@
 export { default } from "deco-sites/fashion/components/footer/Footer.tsx";
 export type {
-  IconItem,
+  ImageItem,
   Item,
   Props,
   Section,

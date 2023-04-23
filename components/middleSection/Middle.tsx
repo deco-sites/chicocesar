@@ -25,10 +25,10 @@ function Middle(
 ) {
   return (
     <div class="flex">
-      <Youtube youtubeSection={youtube}/>
-      <Agenda agendaItems={agenda}/>
+      <Youtube youtubeSection={youtube} />
+      <Agenda agendaItems={agenda} />
     </div>
-  )
+  );
 }
 
 export default Middle;
