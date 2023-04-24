@@ -117,7 +117,7 @@ const options: Omit<Options, "selfURL"> = {
       },
     },
     fontFamily: {
-      sans: ["Albert Sans", "sans-serif"],
+      sans: ["Intervogue", "sans-serif"],
       serif: ["inherit", "serif"],
     },
     screens: {
@@ -136,6 +136,7 @@ const options: Omit<Options, "selfURL"> = {
       display: "flex",
       flexDirection: "column",
       minHeight: "100vh",
+      letterSpacing: "2px",
     },
     'section[data-manifest-key="./sections/Footer.tsx"]': {
       marginTop: "auto",

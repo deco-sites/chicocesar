@@ -40,6 +40,8 @@ export interface Props {
    */
 }
 
+// class={`h-[${headerHeight}]`}
+
 function Header(
   {
     leftNavItems = [],
@@ -47,14 +49,14 @@ function Header(
   }: Props,
 ) {
   return (
-    <header class={`h-[${headerHeight}]`}>
+    <header>
       <div class="bg-black fixed w-full z-50">
         <Navbar leftItems={leftNavItems} rightItems={rightNavItems} />
       </div>
-
+{/* 
       <Modals
         menu={{ items: leftNavItems }}
-      />
+      /> */}
     </header>
   );
 }
