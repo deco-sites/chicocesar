@@ -21,10 +21,11 @@ import * as $$$$$10 from "./islands/AddToCartButton.tsx";
 import * as $$$$$$$$0 from "./sections/Banner.tsx";
 import * as $$$$$$$$1 from "./sections/DesignSystem.story.tsx";
 import * as $$$$$$$$2 from "./sections/Footer.tsx";
-import * as $$$$$$$$3 from "./sections/MiddleSection.tsx";
-import * as $$$$$$$$4 from "./sections/Header.tsx";
-import * as $$$$$$$$5 from "./sections/BannerPLP.tsx";
-import * as $$$$$$$$6 from "./sections/BannerGrid.tsx";
+import * as $$$$$$$$3 from "./sections/InstagramFeed.tsx";
+import * as $$$$$$$$4 from "./sections/MiddleSection.tsx";
+import * as $$$$$$$$5 from "./sections/Header.tsx";
+import * as $$$$$$$$6 from "./sections/BannerPLP.tsx";
+import * as $$$$$$$$7 from "./sections/BannerGrid.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -109,10 +110,11 @@ const manifest: DecoManifest = {
     "deco-sites/chicocesar/sections/Banner.tsx": $$$$$$$$0,
     "deco-sites/chicocesar/sections/DesignSystem.story.tsx": $$$$$$$$1,
     "deco-sites/chicocesar/sections/Footer.tsx": $$$$$$$$2,
-    "deco-sites/chicocesar/sections/MiddleSection.tsx": $$$$$$$$3,
-    "deco-sites/chicocesar/sections/Header.tsx": $$$$$$$$4,
-    "deco-sites/chicocesar/sections/BannerPLP.tsx": $$$$$$$$5,
-    "deco-sites/chicocesar/sections/BannerGrid.tsx": $$$$$$$$6,
+    "deco-sites/chicocesar/sections/InstagramFeed.tsx": $$$$$$$$3,
+    "deco-sites/chicocesar/sections/MiddleSection.tsx": $$$$$$$$4,
+    "deco-sites/chicocesar/sections/Header.tsx": $$$$$$$$5,
+    "deco-sites/chicocesar/sections/BannerPLP.tsx": $$$$$$$$6,
+    "deco-sites/chicocesar/sections/BannerGrid.tsx": $$$$$$$$7,
     "$live/sections/PageInclude.tsx": i2$$$9,
     "deco-sites/std/sections/configYourViews.global.tsx": i2$$$0,
     "deco-sites/std/sections/SEO.tsx": i2$$$1,
