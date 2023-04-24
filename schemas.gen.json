@@ -3797,6 +3797,22 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jaGljb2Nlc2FyL3NlY3Rpb25zL0luc3RhZ3JhbUZlZWQudHN4": {
+      "title": "deco-sites/chicocesar/sections/InstagramFeed.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/chicocesar/sections/InstagramFeed.tsx"
+          ],
+          "default": "deco-sites/chicocesar/sections/InstagramFeed.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9jaGljb2Nlc2FyL3NlY3Rpb25zL01pZGRsZVNlY3Rpb24udHN4": {
       "title": "deco-sites/chicocesar/sections/MiddleSection.tsx",
       "type": "object",
@@ -4477,6 +4493,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGljb2Nlc2FyL3NlY3Rpb25zL0Zvb3Rlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGljb2Nlc2FyL3NlY3Rpb25zL0luc3RhZ3JhbUZlZWQudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGljb2Nlc2FyL3NlY3Rpb25zL01pZGRsZVNlY3Rpb24udHN4"
