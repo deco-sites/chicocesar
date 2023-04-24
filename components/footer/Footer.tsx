@@ -70,7 +70,7 @@ function Footer({ sections = [] }: Props) {
             {/* Desktop view */}
             <ul class="hidden sm:flex flex-row gap-20">
               {sections.map((section) => (
-                <li>
+                <li class="relative m-0 px-3.5 pb-7 w-full font-thin">
                   <div>
                     <Text variant="heading-3" tone="default-inverse">
                       {section.label}
