@@ -35,11 +35,11 @@ function Navbar({ leftItems, rightItems }: {
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden md:flex flex-row justify-between items-center border-b-1 border-default w-full">
-        <div class="flex-auto flex justify-left text-white">
+      <div class="hidden md:flex flex-row justify-between items-center w-full">
+        <div class="flex-auto flex justify-left text-white py-10 text-sm">
           {leftItems.map((item) => <NavItem item={item} />)}
         </div>
-        <div class="flex-auto flex justify-right text-white">
+        <div class="flex-auto flex justify-right text-white py-10 text-sm">
           {rightItems.map((item) => <NavItem item={item} />)}
         </div>
         <div class="text-white">
