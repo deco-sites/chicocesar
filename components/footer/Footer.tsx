@@ -8,6 +8,7 @@ import type { ComponentChildren } from "preact";
 export type ImageItem = { src: string; alt?: string; href?: string };
 export type StringItem = {
   label: string;
+  isEmail?: boolean;
 };
 
 export type Item = StringItem | ImageItem;
@@ -21,6 +22,7 @@ const isImage = (item: Item): item is ImageItem =>
   // deno-lint-ignore no-explicit-any
   typeof (item as any)?.src === "string";
 
+
 function SectionItem({ item }: { item: Item }) {
   return (
     <Text variant="caption" tone="default-inverse">
@@ -29,20 +31,24 @@ function SectionItem({ item }: { item: Item }) {
           <div class="py-1.5 px-2.5">
             <a href={item.href}>
               <Image
-                class="p-6"
+                class=""
                 src={item.src}
                 alt={item.alt}
-                width={150}
-                height={70}
+                width={194}
+                height={74}
                 loading="lazy"
               />
             </a>
           </div>
         )
         : (
-          <p>
-            {item.label}
-          </p>
+          <>
+          {item.isEmail ? (
+            <a href={`mailto:${item.label}`} class="hover:text-gray-500">{item.label}</a>
+          ) : (
+            <p>{item.label}</p>
+          )}
+        </>
         )}
     </Text>
   );
