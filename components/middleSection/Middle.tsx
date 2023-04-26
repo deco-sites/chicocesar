@@ -24,7 +24,7 @@ function Middle(
   }: Props,
 ) {
   return (
-    <div class="flex">
+    <div class="flex bg-black">
       <Youtube youtubeSection={youtube} />
       <Agenda agendaItems={agenda} />
     </div>
