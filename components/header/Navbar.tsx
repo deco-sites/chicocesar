@@ -45,7 +45,7 @@ function Navbar({ leftItems, rightItems }: {
         <div class="text-white">
           PORTUGUÊS
         </div>
-        <div class="flex-none w-22 flex items-center justify-end">
+        <div class="flex-none min-w-16 flex items-center justify-end align-middle">
           <a
             href="https://www.facebook.com/OficialChicoCesar"
             target="_blank"

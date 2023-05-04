@@ -1,12 +1,14 @@
-import Icon from "deco-sites/fashion/components/ui/Icon.tsx";
+import Link from "./Link.tsx";
+import type { LinkItem } from "./Link.tsx";
 
 export interface YoutubeProps {
   title: string;
   url: string;
 }
 
-function Youtube({ youtubeSection }: {
+function Youtube({ youtubeSection, links }: {
   youtubeSection: YoutubeProps;
+  links?: LinkItem[];
 }) {
   const { title, url } = youtubeSection || {};
   return (
@@ -15,34 +17,14 @@ function Youtube({ youtubeSection }: {
       <div class="mt-0 mb-0 max-w-50 h-1 bg-white w-1/12"></div>
       <iframe width="420" height="315" src={url}>
       </iframe>
-      <div class="flex flex-row justify-between">
-        <a
-          href="https://www.instagram.com/oficialchicocesar/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="gap-2"
-        >
-          Spotify
-          <Icon id="Instagram" width={40} height={40} strokeWidth={0.1} />
-        </a>
-        <a
-          href="https://twitter.com/ChicoCesarOf"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="gap-2"
-        >
-          Apple Music
-          <Icon id="Twitter" width={40} height={40} strokeWidth={0.1} />
-        </a>
-        <a
-          href="https://www.youtube.com/c/ChicoCesarOficial"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="gap-2"
-        >
-          Youtube
-          <Icon id="Youtube" width={40} height={40} strokeWidth={0.1} />
-        </a>
+      <div class="flex flex-row justify-around">
+        {links
+          ? (
+            <div class="text_white flex">
+              {links.map((link) => <Link link={link} />)}
+            </div>
+          )
+          : null}
       </div>
     </div>
   );

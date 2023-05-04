@@ -22,7 +22,6 @@ const isImage = (item: Item): item is ImageItem =>
   // deno-lint-ignore no-explicit-any
   typeof (item as any)?.src === "string";
 
-
 function SectionItem({ item }: { item: Item }) {
   return (
     <Text variant="caption" tone="default-inverse">
@@ -43,12 +42,14 @@ function SectionItem({ item }: { item: Item }) {
         )
         : (
           <>
-          {item.isEmail ? (
-            <a href={`mailto:${item.label}`} class="hover:text-gray-500">{item.label}</a>
-          ) : (
-            <p>{item.label}</p>
-          )}
-        </>
+            {item.isEmail
+              ? (
+                <a href={`mailto:${item.label}`} class="hover:text-gray-500">
+                  {item.label}
+                </a>
+              )
+              : <p>{item.label}</p>}
+          </>
         )}
     </Text>
   );
