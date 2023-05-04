@@ -3,7 +3,7 @@ import Image from "deco-sites/std/components/Image.tsx";
 
 export interface LinkItem {
   name: string;
-  linkUrl: string
+  linkUrl: string;
   image?: { src?: string; alt?: string };
 }
 
@@ -11,7 +11,7 @@ function Link({ link }: { link: LinkItem }) {
   const { name, linkUrl, image } = link;
 
   return (
-    <div class="gap-2 font-thin text-2xl tracking-normal flex">
+    <div class="mx-2 font-thin text-2xl tracking-normal flex">
       {image?.src && (
         <Image
           src={image.src}

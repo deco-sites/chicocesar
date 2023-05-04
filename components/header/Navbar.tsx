@@ -27,7 +27,7 @@ function Navbar({ leftItems, rightItems }: {
         </a>
 
         <div class="flex gap-1">
-          <HeaderButton variant="facebook"/>
+          <HeaderButton variant="facebook" />
           <HeaderButton variant="instagram" />
           <HeaderButton variant="twitter" />
           <HeaderButton variant="youtube" />

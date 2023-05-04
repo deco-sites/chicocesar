@@ -4,7 +4,7 @@ import type { Image } from "deco-sites/std/components/types.ts";
 
 export interface Links {
   name: string;
-  linkUrl: string
+  linkUrl: string;
   image?: {
     src?: Image;
     alt?: string;

@@ -18,11 +18,13 @@ function Youtube({ youtubeSection, links }: {
       <iframe width="420" height="315" src={url}>
       </iframe>
       <div class="flex flex-row justify-around">
-        {links ? (
-          <div class="text_white flex">
-            {links.map((link) => <Link link={link} />)}
-          </div>
-        ) : null}
+        {links
+          ? (
+            <div class="text_white flex">
+              {links.map((link) => <Link link={link} />)}
+            </div>
+          )
+          : null}
       </div>
     </div>
   );
