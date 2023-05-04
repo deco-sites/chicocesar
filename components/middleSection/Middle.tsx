@@ -1,9 +1,14 @@
 import Agenda from "./Agenda.tsx";
 import Youtube, { YoutubeProps } from "./Youtube.tsx";
+import type { Image } from "deco-sites/std/components/types.ts";
 
-export interface Youtube {
-  title: string;
-  url: string;
+export interface Links {
+  name: string;
+  linkUrl: string
+  image?: {
+    src?: Image;
+    alt?: string;
+  };
 }
 
 export interface Agenda {
@@ -14,18 +19,14 @@ export interface Agenda {
 
 export interface Props {
   youtube: YoutubeProps;
+  links: Links[];
   agenda: Agenda[];
 }
 
-function Middle(
-  {
-    youtube,
-    agenda = [],
-  }: Props,
-) {
+function Middle({ youtube, links = [], agenda = [] }: Props) {
   return (
-    <div class="flex bg-black">
-      <Youtube youtubeSection={youtube} />
+    <div className="flex bg-black">
+      <Youtube youtubeSection={youtube} links={links} />
       <Agenda agendaItems={agenda} />
     </div>
   );

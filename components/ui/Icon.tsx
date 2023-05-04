@@ -46,10 +46,12 @@ interface Props extends JSX.SVGAttributes<SVGSVGElement> {
    */
   id: AvailableIcons;
   size?: number;
+  color?: string
+  strokeWidth?: number;
 }
 
 function Icon(
-  { id, strokeWidth = 16, size, width, height, ...otherProps }: Props,
+  { id, strokeWidth = 16, size, width, height, color, ...otherProps }: Props,
 ) {
   return (
     <svg
@@ -57,6 +59,8 @@ function Icon(
       width={width ?? size}
       height={height ?? size}
       strokeWidth={strokeWidth}
+      stroke={color} // Use the stroke attribute to set the color of the icon
+      fill="none" // Set fill to none to avoid filling the inside of the icon
     >
       <use href={asset(`/sprites.svg#${id}`)} />
     </svg>

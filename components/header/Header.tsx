@@ -53,12 +53,6 @@ function Header(
       <div class="bg-black fixed w-full z-50">
         <Navbar leftItems={leftNavItems} rightItems={rightNavItems} />
       </div>
-      {
-        /*
-      <Modals
-        menu={{ items: leftNavItems }}
-      /> */
-      }
     </header>
   );
 }
