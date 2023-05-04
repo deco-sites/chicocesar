@@ -22,22 +22,8 @@ export interface NavItem {
 }
 
 export interface Props {
-  /** @title Search Bar */
-  /**
-   * @title Navigation items
-   * @description Navigation items used both on mobile and desktop menus
-   */
   leftNavItems?: NavItem[];
   rightNavItems?: NavItem[];
-
-  /**
-   * @title Product suggestions
-   * @description Product suggestions displayed on search
-   */
-
-  /**
-   * @title Enable Top Search terms
-   */
 }
 
 // class={`h-[${headerHeight}]`}

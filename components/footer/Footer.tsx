@@ -145,7 +145,13 @@ function Footer({ sections = [] }: Props) {
                 <Icon id="Deco" height={20} width={60} strokeWidth={0.01} />
               </a>
             </Text>
-
+            <Text
+              class="flex items-center gap-1"
+              variant="body"
+              tone="default-inverse"
+            >
+            © Todos os direitos reservados
+            </Text>
             <ul class="flex items-center justify-center gap-2">
               <li>
                 <a

@@ -2341,7 +2341,8 @@
         },
         "url": {
           "type": "string",
-          "title": "Url"
+          "title": "Url",
+          "description": "The link format should be https://www.youtube.com/embed/[VIDEO_ID]"
         }
       },
       "required": [
@@ -2533,8 +2534,7 @@
       "properties": {
         "leftNavItems": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGljb2Nlc2FyL2NvbXBvbmVudHMvaGVhZGVyL0hlYWRlci50c3g=@NavItem[]",
-          "title": "Left Nav Items",
-          "description": "Navigation items used both on mobile and desktop menus"
+          "title": "Left Nav Items"
         },
         "rightNavItems": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jaGljb2Nlc2FyL2NvbXBvbmVudHMvaGVhZGVyL0hlYWRlci50c3g=@NavItem[]",
