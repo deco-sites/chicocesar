@@ -23,7 +23,8 @@ function Youtube({ youtubeSection, links }: {
           class="mb-5 mx-auto"
           src={`${url}?autoplay=1&mute=1`}
           allow="autoplay; encrypted-media"
-        ></iframe>
+        >
+        </iframe>
         <div class="flex flex-row justify-around">
           {links
             ? (
@@ -34,7 +35,6 @@ function Youtube({ youtubeSection, links }: {
             : null}
         </div>
       </div>
-
 
       {/* Desktop Version */}
       <div class="hidden md:block bg-black p-5 text-white w-1/2	h-auto">
