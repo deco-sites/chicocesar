@@ -102,17 +102,14 @@ function Footer({ sections = [] }: Props) {
             {/* Mobile view */}
             <ul class="flex flex-col sm:hidden sm:flex-row gap-4">
               {sections.map((section) => (
-                <li>
+                <li class="mb-3">
                   <Text variant="body" tone="default-inverse">
-                    <details>
-                      <summary>
                         {section.label}
-                      </summary>
 
                       <ul
                         class={`flex ${
                           isImage(section.children[0]) ? "flex-row" : "flex-col"
-                        } gap-2 px-2 pt-2`}
+                        } gap-2 pt-2`}
                       >
                         {section.children.map((item) => (
                           <li>
@@ -120,7 +117,6 @@ function Footer({ sections = [] }: Props) {
                           </li>
                         ))}
                       </ul>
-                    </details>
                   </Text>
                 </li>
               ))}
@@ -132,8 +128,9 @@ function Footer({ sections = [] }: Props) {
       <div>
         <Container class="w-full">
           <FooterContainer class="flex justify-between w-full">
+          {/* Desktop view */}
             <Text
-              class="flex items-center gap-1"
+              class="flex items-center gap-1 hidden sm:flex "
               variant="body"
               tone="default-inverse"
             >
@@ -146,13 +143,13 @@ function Footer({ sections = [] }: Props) {
               </a>
             </Text>
             <Text
-              class="flex items-center gap-1"
+              class="flex items-center gap-1 hidden sm:flex "
               variant="body"
               tone="default-inverse"
             >
             © Todos os direitos reservados
             </Text>
-            <ul class="flex items-center justify-center gap-2">
+            <ul class="flex items-center justify-center gap-2 hidden sm:flex ">
               <li>
                 <a
                   href="https://www.instagram.com/deco.cx"
@@ -175,6 +172,7 @@ function Footer({ sections = [] }: Props) {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Discord logo"
+                  class="hidden sm:flex"
                 >
                   <Icon
                     class="text-default-inverse"
@@ -185,7 +183,64 @@ function Footer({ sections = [] }: Props) {
                   />
                 </a>
               </li>
-            </ul>
+            </ul>                
+          {/* Mobile view */}
+            <div class="flex flex-col sm:hidden sm:flex-row gap-4">
+              <Text
+                class="flex items-center gap-1 text-sm"
+                variant="body"
+                tone="default-inverse"
+              >
+              © Todos os direitos reservados
+              </Text>
+              <Text
+                class="flex items-center gap-1"
+                variant="body"
+                tone="default-inverse"
+              >
+                Powered by{" "}
+                <a
+                  href="https://www.deco.cx"
+                  aria-label="powered by https://www.deco.cx"
+                >
+                  <Icon id="Deco" height={20} width={60} strokeWidth={0.01} />
+                </a>
+              </Text>
+              <ul class="flex justify-left gap-2">
+                <li>
+                  <a
+                    href="https://www.instagram.com/deco.cx"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram logo"
+                  >
+                    <Icon
+                      class="text-default-inverse"
+                      width={32}
+                      height={32}
+                      id="Instagram"
+                      strokeWidth={1}
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="http://www.deco.cx/discord"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Discord logo"
+                  >
+                    <Icon
+                      class="text-default-inverse"
+                      width={32}
+                      height={32}
+                      id="Discord"
+                      strokeWidth={5}
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </FooterContainer>
         </Container>
       </div>
