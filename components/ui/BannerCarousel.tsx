@@ -40,15 +40,15 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
     <>
       {/* Mobile Version */}
       <div className="md:hidden relative">
-        <h1 className="absolute whitespace-nowrap text-5xl bottom-8 left-1/2 transform -translate-x-1/2 z-10 text-white">
+        <h1 className="absolute whitespace-nowrap text-4xl bottom-8 left-1/2 transform -translate-x-1/2 z-10 text-white">
           Vestido De Amor
         </h1>
         <div className="relative min-w-[100vw] overflow-y-hidden">
           <Picture className="w-full h-full" preload={lcp}>
             <img
-              className="object-cover w-full sm:h-full"
+              className="object-cover object-contain w-full h-full"
               loading={lcp ? "eager" : "lazy"}
-              src={desktop}
+              src={mobile}
               alt={alt}
             />
           </Picture>
