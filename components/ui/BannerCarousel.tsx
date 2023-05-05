@@ -37,35 +37,48 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
   } = image;
 
   return (
-    <div className="relative">
-      <h1 className="absolute text-6xl font-thin top-48 left-36 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white">
-        CHICO<br></br>CÉSAR
-      </h1>
-      <div className="relative h-[600px] min-w-[100vw] overflow-y-hidden">
-        <Picture className="w-full" preload={lcp}>
-          <Source
-            media="(max-width: 767px)"
-            fetchPriority={lcp ? "high" : "auto"}
-            src={mobile}
-            width={360}
-            height={600}
-          />
-          <Source
-            media="(min-width: 768px)"
-            fetchPriority={lcp ? "high" : "auto"}
-            src={desktop}
-            width={1440}
-            height={600}
-          />
-          <img
-            className="object-cover w-full sm:h-full"
-            loading={lcp ? "eager" : "lazy"}
-            src={desktop}
-            alt={alt}
-          />
-        </Picture>
+    <>
+      {/* Mobile Version */}
+      <div className="md:hidden relative">
+        <h1 className="absolute whitespace-nowrap text-5xl bottom-8 left-1/2 transform -translate-x-1/2 z-10 text-white">
+          Vestido De Amor
+        </h1>
+        <div className="relative min-w-[100vw] overflow-y-hidden">
+          <Picture className="w-full h-full" preload={lcp}>
+            <img
+              className="object-cover w-full sm:h-full"
+              loading={lcp ? "eager" : "lazy"}
+              src={desktop}
+              alt={alt}
+            />
+          </Picture>
+        </div>
       </div>
-    </div>
+
+      {/* Desktop Version */}
+      <div className="hidden md:block relative">
+        <h1 className="absolute text-6xl font-thin top-48 left-36 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white">
+          CHICO<br></br>CÉSAR
+        </h1>
+        <div className="relative h-[600px] min-w-[100vw] overflow-y-hidden">
+          <Picture className="w-full h-full" preload={lcp}>
+            <Source
+              media="(min-width: 768px)"
+              fetchPriority={lcp ? "high" : "auto"}
+              src={desktop}
+              width={1440}
+              height={600}
+            />
+            <img
+              className="object-cover w-full sm:h-full"
+              loading={lcp ? "eager" : "lazy"}
+              src={desktop}
+              alt={alt}
+            />
+          </Picture>
+        </div>
+      </div>
+    </>
   );
 }
 
