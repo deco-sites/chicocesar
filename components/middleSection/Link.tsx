@@ -11,17 +11,33 @@ function Link({ link }: { link: LinkItem }) {
   const { name, linkUrl, image } = link;
 
   return (
-    <div class="mx-2 font-thin text-2xl tracking-normal flex">
-      {image?.src && (
-        <Image
-          src={image.src}
-          alt={image.alt}
-          width={25}
-          height={25}
-        />
-      )}
-      <a href={linkUrl} target="_blank" rel="noopener noreferrer">{name}</a>
-    </div>
+    <>
+      {/* Mobile Version */}
+      <div class="md:hidden mx-2 font-thin text-base tracking-normal flex">
+        {image?.src && (
+          <Image
+            src={image.src}
+            alt={image.alt}
+            width={20}
+            height={20}
+          />
+        )}
+        <a href={linkUrl} target="_blank" rel="noopener noreferrer">{name}</a>
+      </div>
+
+      {/* Desktop Version */}
+      <div class="hidden md:flex mx-2 font-thin text-2xl tracking-normal flex">
+        {image?.src && (
+          <Image
+            src={image.src}
+            alt={image.alt}
+            width={25}
+            height={25}
+          />
+        )}
+        <a href={linkUrl} target="_blank" rel="noopener noreferrer">{name}</a>
+      </div>
+    </>
   );
 }
 
