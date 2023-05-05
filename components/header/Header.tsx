@@ -15,10 +15,6 @@ export interface NavItem {
       href: string;
     }>;
   }>;
-  image?: {
-    src?: Image;
-    alt?: string;
-  };
 }
 
 export interface Props {
