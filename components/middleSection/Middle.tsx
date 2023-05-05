@@ -25,10 +25,19 @@ export interface Props {
 
 function Middle({ youtube, links = [], agenda = [] }: Props) {
   return (
-    <div className="flex bg-black">
-      <Youtube youtubeSection={youtube} links={links} />
-      <Agenda agendaItems={agenda} />
-    </div>
+    <>
+      {/* Mobile Version */}
+      <div className="md:hidden bg-black">
+        <Youtube youtubeSection={youtube} links={links} />
+        <Agenda agendaItems={agenda} />
+      </div>
+
+      {/* Desktop Version */}
+      <div className="hidden md:flex bg-black">
+        <Youtube youtubeSection={youtube} links={links} />
+        <Agenda agendaItems={agenda} />
+      </div>
+    </>
   );
 }
 
