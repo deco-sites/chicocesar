@@ -33,7 +33,6 @@ function InstagramButton() {
 }
 
 function TwitterButton() {
-
   return (
     <a
       href="https://twitter.com/ChicoCesarOf"

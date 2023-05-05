@@ -38,7 +38,9 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
 
   return (
     <div className="relative">
-      <h1 className="absolute text-6xl font-thin top-48 left-36 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white">CHICO<br></br>CÉSAR</h1>
+      <h1 className="absolute text-6xl font-thin top-48 left-36 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white">
+        CHICO<br></br>CÉSAR
+      </h1>
       <div className="relative h-[600px] min-w-[100vw] overflow-y-hidden">
         <Picture className="w-full" preload={lcp}>
           <Source

@@ -17,7 +17,11 @@ function Agenda({ agendaItems }: {
           <div class="overflow-y-scroll" style="height: calc(100% - 40px);">
             <table class="w-full">
               <div class="flex-auto flex justify-left text-white">
-                {agendaItems.map((concert) => <AgendaTable concert={concert} />)}
+                {agendaItems.map((concert) => (
+                  <AgendaTable
+                    concert={concert}
+                  />
+                ))}
               </div>
             </table>
           </div>
@@ -35,7 +39,11 @@ function Agenda({ agendaItems }: {
           <div class="overflow-y-scroll" style="height: calc(100% - 40px);">
             <table class="w-full">
               <div class="flex-auto flex justify-left text-white">
-                {agendaItems.map((concert) => <AgendaTable concert={concert} />)}
+                {agendaItems.map((concert) => (
+                  <AgendaTable
+                    concert={concert}
+                  />
+                ))}
               </div>
             </table>
           </div>
