@@ -5,50 +5,45 @@ import { useCart } from "deco-sites/std/commerce/vtex/hooks/useCart.ts";
 import { sendAnalyticsEvent } from "deco-sites/std/commerce/sdk/sendAnalyticsEvent.ts";
 
 function FacebookButton() {
-  const { displayFacebook } = useUI();
-
   return (
-    <Button
-      variant="icon"
+    <a
+      href="https://www.instagram.com/oficialchicocesar/"
+      target="_blank"
+      rel="noopener noreferrer"
       aria-label="Follow us on Facebook"
-      onClick={() => {
-        // link to proper site
-      }}
+      class="inline-flex items-center justify-center gap-4 mx-2 cursor-pointer disabled:cursor-not-allowed transition-colors duration-150 ease-in"
     >
       <Icon id="Facebook" width={20} height={20} strokeWidth={0.1} />
-    </Button>
+    </a>
   );
 }
 
 function InstagramButton() {
-  const { displayInstagram } = useUI();
-
   return (
-    <Button
-      variant="icon"
+    <a
+      href="https://www.facebook.com/OficialChicoCesar"
+      target="_blank"
+      rel="noopener noreferrer"
       aria-label="Follow us on Instagram"
-      onClick={() => {
-        // link to proper site
-      }}
+      class="inline-flex items-center justify-center gap-2 mx-2 cursor-pointer disabled:cursor-not-allowed transition-colors duration-150 ease-in"
     >
       <Icon id="Instagram" width={20} height={20} strokeWidth={0.1} />
-    </Button>
+    </a>
   );
 }
 
 function TwitterButton() {
-  const { displayTwitter } = useUI();
 
   return (
-    <Button
-      variant="icon"
-      aria-label="Follow us on Twitter"
-      onClick={() => {
-        // link to proper site
-      }}
+    <a
+      href="https://twitter.com/ChicoCesarOf"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Follow us on Instagram"
+      class="inline-flex items-center justify-center mx-2 gap-2 cursor-pointer disabled:cursor-not-allowed transition-colors duration-150 ease-in"
     >
       <Icon id="Twitter" width={20} height={20} strokeWidth={0.1} />
-    </Button>
+    </a>
   );
 }
 
@@ -56,15 +51,15 @@ function YoutubeButton() {
   const { displayYoutube } = useUI();
 
   return (
-    <Button
-      variant="icon"
-      aria-label="Follow us on Youtube"
-      onClick={() => {
-        // link to proper site
-      }}
+    <a
+      href="https://www.youtube.com/c/ChicoCesarOficial"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Follow us on Instagram"
+      class="inline-flex items-center justify-center mx-2 gap-2 cursor-pointer disabled:cursor-not-allowed transition-colors duration-150 ease-in"
     >
       <Icon id="Youtube" width={20} height={20} strokeWidth={0.1} />
-    </Button>
+    </a>
   );
 }
 

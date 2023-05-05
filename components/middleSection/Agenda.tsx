@@ -6,7 +6,7 @@ function Agenda({ agendaItems }: {
 }) {
   return (
     <div class="basis-2/4">
-      <div class="bg-black p-5 text-white w-1/1 bg-center bg-cover bg-no-repeat" style="height: 450px;">
+      <div class="bg-black p-5 text-white w-1/1 bg-center bg-cover bg-no-repeat h-[28rem]">
         <div class="flex justify-between">
           <h1 class="text-3xl font-thin">AGENDA</h1>
           <a href="https://chicocesar.com.br/agenda/">VER MAIS [+]</a>

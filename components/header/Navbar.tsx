@@ -39,45 +39,14 @@ function Navbar({ leftItems, rightItems }: {
         <div class="flex-auto flex justify-left text-white py-10 text-sm">
           {leftItems.map((item) => <NavItem item={item} />)}
         </div>
-        <div class="flex-auto flex justify-right text-white py-10 text-sm">
+        <div class="flex-auto flex justify-right text-white py-10 text-sm mr-8">
           {rightItems.map((item) => <NavItem item={item} />)}
         </div>
-        <div class="text-white">
-          PORTUGUÊS
-        </div>
-        <div class="flex-none min-w-16 flex items-center justify-end align-middle">
-          <a
-            href="https://www.facebook.com/OficialChicoCesar"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="gap-2"
-          >
-            <Icon id="Facebook" width={20} height={20} strokeWidth={0.1} />
-          </a>
-          <a
-            href="https://www.instagram.com/oficialchicocesar/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="gap-2"
-          >
-            <Icon id="Instagram" width={20} height={20} strokeWidth={0.1} />
-          </a>
-          <a
-            href="https://twitter.com/ChicoCesarOf"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="gap-2"
-          >
-            <Icon id="Twitter" width={20} height={20} strokeWidth={0.1} />
-          </a>
-          <a
-            href="https://www.youtube.com/c/ChicoCesarOficial"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="gap-2"
-          >
-            <Icon id="Youtube" width={20} height={20} strokeWidth={0.1} />
-          </a>
+        <div class="mr-4">
+          <HeaderButton variant="facebook" />
+          <HeaderButton variant="instagram" />
+          <HeaderButton variant="twitter" />
+          <HeaderButton variant="youtube" />
         </div>
       </div>
     </>
