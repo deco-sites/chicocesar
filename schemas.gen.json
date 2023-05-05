@@ -2852,7 +2852,7 @@
           "type": "string",
           "title": "Title Template",
           "description": "add a %s whenever you want it to be replaced with the product name",
-          "default": "%s | Fashion Store"
+          "default": "%s | Chico César - Site Oficial"
         },
         "description": {
           "type": [
