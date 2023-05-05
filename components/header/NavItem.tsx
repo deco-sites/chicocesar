@@ -26,7 +26,7 @@ function NavItem({ item }: { item: INavItem }) {
         (
           <div
             class={`delay-300 absolute invisible hover:visible group-hover:visible bg-default z-50 flex items-start justify-center gap-6 border-t-1 border-b-2 w-60 border-default mt-${headerHeight}`}
-            style={{ transform: "translateY(100%)" } }
+            style={{ transform: "translateY(100%)" }}
           >
             <ul class="flex items-start justify-center gap-6">
               {children.map((node) => (

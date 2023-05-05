@@ -104,19 +104,19 @@ function Footer({ sections = [] }: Props) {
               {sections.map((section) => (
                 <li class="mb-3">
                   <Text variant="body" tone="default-inverse">
-                        {section.label}
+                    {section.label}
 
-                      <ul
-                        class={`flex ${
-                          isImage(section.children[0]) ? "flex-row" : "flex-col"
-                        } gap-2 pt-2`}
-                      >
-                        {section.children.map((item) => (
-                          <li>
-                            <SectionItem item={item} />
-                          </li>
-                        ))}
-                      </ul>
+                    <ul
+                      class={`flex ${
+                        isImage(section.children[0]) ? "flex-row" : "flex-col"
+                      } gap-2 pt-2`}
+                    >
+                      {section.children.map((item) => (
+                        <li>
+                          <SectionItem item={item} />
+                        </li>
+                      ))}
+                    </ul>
                   </Text>
                 </li>
               ))}
@@ -128,7 +128,7 @@ function Footer({ sections = [] }: Props) {
       <div>
         <Container class="w-full">
           <FooterContainer class="flex justify-between w-full">
-          {/* Desktop view */}
+            {/* Desktop view */}
             <Text
               class="flex items-center gap-1 hidden sm:flex "
               variant="body"
@@ -147,7 +147,7 @@ function Footer({ sections = [] }: Props) {
               variant="body"
               tone="default-inverse"
             >
-            © Todos os direitos reservados
+              © Todos os direitos reservados
             </Text>
             <ul class="flex items-center justify-center gap-2 hidden sm:flex ">
               <li>
@@ -183,15 +183,15 @@ function Footer({ sections = [] }: Props) {
                   />
                 </a>
               </li>
-            </ul>                
-          {/* Mobile view */}
+            </ul>
+            {/* Mobile view */}
             <div class="flex flex-col sm:hidden sm:flex-row gap-4">
               <Text
                 class="flex items-center gap-1 text-sm"
                 variant="body"
                 tone="default-inverse"
               >
-              © Todos os direitos reservados
+                © Todos os direitos reservados
               </Text>
               <Text
                 class="flex items-center gap-1"
