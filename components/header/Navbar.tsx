@@ -16,21 +16,8 @@ function Navbar({ leftItems, rightItems }: {
       <div
         class={`md:hidden flex flex-row justify-between items-center h-[${navbarHeight}] border-b-1 border-default w-full px-2 gap-2`}
       >
-        <HeaderButton variant="menu" />
-
-        <a
-          href="/"
-          class={`flex-grow inline-flex items-center min-h-[${navbarHeight}]`}
-          aria-label="Store logo"
-        >
-          <Icon id="Logo" width={126} height={16} />
-        </a>
-
-        <div class="flex gap-1">
-          <HeaderButton variant="facebook" />
-          <HeaderButton variant="instagram" />
-          <HeaderButton variant="twitter" />
-          <HeaderButton variant="youtube" />
+        <div class="ml-auto">
+          <HeaderButton variant="menu" />
         </div>
       </div>
 

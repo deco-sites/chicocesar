@@ -85,7 +85,7 @@ const Modal = ({
         <div
           class={`bg-default flex flex-col max-h-full ${containerStyles[mode]}`}
         >
-          <header class="flex px-4 py-6 justify-between items-center border-b-1 border-default">
+          <header class="flex justify-between items-center">
             <h1>
               <Text variant="heading-2">{title}</Text>
             </h1>

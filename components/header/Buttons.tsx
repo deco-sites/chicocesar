@@ -46,6 +46,22 @@ function TwitterButton() {
   );
 }
 
+function MenuButton() {
+  const { displayMenu } = useUI();
+
+  return (
+    <Button
+      class="btn-square btn-ghost"
+      aria-label="open menu"
+      onClick={() => {
+        displayMenu.value = true;
+      }}
+    >
+      <Icon id="Bars3" width={20} height={20} strokeWidth={0.01} />
+    </Button>
+  );
+}
+
 function YoutubeButton() {
   const { displayYoutube } = useUI();
 
@@ -81,6 +97,10 @@ function HeaderButton(
 
   if (variant === "youtube") {
     return <YoutubeButton />;
+  }
+
+  if (variant === "menu") {
+    return <MenuButton />;
   }
 
   return null;
