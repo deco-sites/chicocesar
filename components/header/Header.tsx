@@ -30,11 +30,17 @@ function Header(
     rightNavItems = [],
   }: Props,
 ) {
+
+  const navItems = leftNavItems.concat(rightNavItems)
   return (
     <header>
       <div class="bg-black fixed w-full z-50">
         <Navbar leftItems={leftNavItems} rightItems={rightNavItems} />
       </div>
+
+      <Modals
+          menu={{ items: navItems }}
+        />
     </header>
   );
 }

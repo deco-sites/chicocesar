@@ -1,6 +1,7 @@
 import Icon from "deco-sites/fashion/components/ui/Icon.tsx";
 import Text from "deco-sites/fashion/components/ui/Text.tsx";
 import Button from "deco-sites/fashion/components/ui/Button.tsx";
+import HeaderButton from "deco-sites/fashion/islands/HeaderButton.tsx";
 import { useSignal } from "@preact/signals";
 import type { INavItem } from "./NavItem.tsx";
 
@@ -14,7 +15,7 @@ function MenuItem({ item, level = 0 }: { item: INavItem; level?: number }) {
 
   const title = (
     <Text
-      class="flex-grow min-h-[40px] flex items-center justify-start"
+      class="flex-grow min-h-[40px] flex items-center"
       variant={level === 0 ? "menu" : "caption"}
     >
       {item.label}
@@ -78,51 +79,31 @@ function MenuItem({ item, level = 0 }: { item: INavItem; level?: number }) {
 
 function Menu({ items }: Props) {
   return (
-    <>
-      <ul class="px-4 flex-grow flex flex-col divide-y divide-default">
-        {items.map((item) => <MenuItem item={item} />)}
-      </ul>
+    <div class="h-screen flex justify-center items-center">
+      <div class="flex flex-col justify-center">
+        <ul class="px-4 flex-grow flex flex-col items-center divide-default">
+          {items.map((item) => <MenuItem item={item} />)}
+        </ul>
 
-      <ul class="flex flex-col py-2 bg-hover">
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="/wishlist"
-          >
-            <Icon id="Heart" width={20} height={20} strokeWidth={2} />
-            <Text variant="caption">Lista de desejos</Text>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="MapPin" width={20} height={20} strokeWidth={2} />
-            <Text variant="caption">Nossas lojas</Text>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="Phone" width={20} height={20} strokeWidth={2} />
-            <Text variant="caption">Fale conosco</Text>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="User" width={20} height={20} strokeWidth={2} />
-            <Text variant="caption">Minha conta</Text>
-          </a>
-        </li>
-      </ul>
-    </>
+        <ul class="flex flex-row py-2 items-center justify-center">
+          <li>
+            <HeaderButton variant="facebook" />
+          </li>
+          <li>
+            <HeaderButton variant="instagram" />
+          </li>
+          <li>
+            <HeaderButton variant="twitter" />
+          </li>
+          <li>
+            <HeaderButton variant="youtube" />
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 }
+
+
 
 export default Menu;
